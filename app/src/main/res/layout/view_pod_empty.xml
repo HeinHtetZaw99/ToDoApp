@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daniel.user.todo.components.EmptyViewPod xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/emptyViewPodNotification"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+                android:id="@+id/ivEmpty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="center"
+                android:src="@drawable/no_data_found" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/tvEmpty"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Push 'Refresh' To Load"-->
+        <!--android:gravity="center"-->
+        <!--android:textColor="#000"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_marginBottom="100dp"-->
+        <!--/>-->
+        <Button
+                android:id="@+id/refreshBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginBottom="90dp"
+                android:background="@drawable/btn_border_green"
+                android:gravity="center"
+                android:text="REFRESH"
+                android:textColor="@color/white_full" />
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_overlay" />
+
+    </RelativeLayout>
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/btnRefreshEmpty"-->
+    <!--style="@style/AccentButton"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/tvEmpty"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="@dimen/margin_medium"-->
+    <!--android:padding="@dimen/padding_small"-->
+    <!--android:text="Refresh" />-->
+
+</com.daniel.user.todo.components.EmptyViewPod>
